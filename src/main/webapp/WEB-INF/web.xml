@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<display-name>xdi2-selfhosted</display-name>
+
+	<!-- XDI SERVLET -->
+
+	<servlet>
+		<servlet-name>EndpointServlet</servlet-name>
+		<servlet-class>xdi2.transport.impl.http.impl.servlet.EndpointServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndpointServlet</servlet-name>
+		<url-pattern>/xdi/*</url-pattern>
+		<url-pattern>/xdi/</url-pattern>
+	</servlet-mapping>
+
+	<!-- OTHER SERVLETS -->
+
+	<servlet>
+		<servlet-name>ViewTicketServlet</servlet-name>
+		<servlet-class>aeternam.xdi.ViewTicketServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewTicketServlet</servlet-name>
+		<url-pattern>/viewticket</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ActivateTicketServlet</servlet-name>
+		<servlet-class>aeternam.xdi.ActivateTicketServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ActivateTicketServlet</servlet-name>
+		<url-pattern>/activateticket</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeactivateTicketServlet</servlet-name>
+		<servlet-class>aeternam.xdi.DeactivateTicketServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeactivateTicketServlet</servlet-name>
+		<url-pattern>/deactivateticket</url-pattern>
+	</servlet-mapping>
+
+	<!-- LISTENERS -->
+
+	<listener>
+		<listener-class>xdi2.transport.impl.http.impl.servlet.PluginsLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>xdi2.transport.impl.websocket.impl.listener.WebSocketsListener</listener-class>
+	</listener>
+
+</web-app>

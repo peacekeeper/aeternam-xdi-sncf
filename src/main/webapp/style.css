@@ -1,0 +1,15 @@
+* {
+	font-family: sans-serif;
+}
+
+#result {
+	font-family: monospace;
+	width: 600px;
+	height: 600px;
+	border: 4px dashed gray;
+	white-space: pre;
+}
+
+button {
+	padding: 15px;
+}
