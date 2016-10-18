@@ -2,7 +2,7 @@
 
 <head>
 
-<title>ÆTERNAM XDI Demo - ÖBB</title>
+<title>AETERNAM XDI Demo - SNCF</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta charset="UTF-8"> 
 
@@ -51,7 +51,7 @@ function deactivateticket() {
 
 <body>
 
-<h1><img src="images/logo-oebb.png" height="60"><img src="images/logo-xdi-business.jpg" height="60"></h1>
+<h1><img src="images/logo-sncf.png" height="60"><img src="images/logo-xdi-business.jpg" height="60"></h1>
 
 <button onclick="viewticket();">VIEW TICKET</button>
 

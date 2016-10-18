@@ -27,8 +27,8 @@ public class ViewTicketServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		MessageEnvelope me = new MessageEnvelope();
-		Message m = me.createMessage(Constants.oebbCloudNumber.getXDIAddress());
-		m.setToPeerRootXDIArc(Constants.oebbCloudNumber.getPeerRootXDIArc());
+		Message m = me.createMessage(Constants.selfCloudNumber.getXDIAddress());
+		m.setToPeerRootXDIArc(Constants.selfCloudNumber.getPeerRootXDIArc());
 		m.setLinkContractClass(RootLinkContract.class);
 		m.setSecretToken(Constants.secretToken);
 		m.createGetOperation(Constants.ticketXDIAddress);
@@ -37,7 +37,7 @@ public class ViewTicketServlet extends HttpServlet {
 
 		try {
 
-			mr = Constants.oebbXDIClient().send(me);
+			mr = Constants.selfXDIClient().send(me);
 		} catch (Xdi2ClientException ex) {
 
 			log.error(ex.getMessage(), ex);

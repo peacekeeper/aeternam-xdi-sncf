@@ -11,17 +11,17 @@ import xdi2.core.syntax.XDIAddress;
 
 public class Constants {
 
-	public static URI oebbEndpoint = URI.create("http://localhost:7203/xdi/graph");
+	public static URI selfEndpoint = URI.create("http://localhost:7205/xdi/graph");
 
-	public static CloudNumber oebbCloudNumber = CloudNumber.create("+!:uuid:cd5e5900-406b-4eac-b578-eea37eb502c2");
+	public static CloudNumber selfCloudNumber = CloudNumber.create("+!:uuid:f67a6673-6785-497a-a0b7-696742525795");
 
 	public static String secretToken = "alice";
 
-	public static XDIAddress ticketXDIAddress = XDIAddress.create("*!:uuid:3fc43aa0-a86c-4a0e-b8ed-ec4dcb4f976c");
+	public static XDIAddress ticketXDIAddress = XDIAddress.create("*!:uuid:972ae814-0120-4361-81dc-473f9e8f7536");
 
-	public static XDIHttpClient oebbXDIClient() {
+	public static XDIHttpClient selfXDIClient() {
 
-		return new XDIHttpClient(Constants.oebbEndpoint);
+		return new XDIHttpClient(Constants.selfEndpoint);
 	}
 
 	public static XDIWriter jxdXDIWriter() {

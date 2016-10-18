@@ -71,6 +71,13 @@
 							<property name="registryXdiClient">
 								<bean class="xdi2.client.impl.local.XDILocalClient">
 									<constructor-arg ref="graph" />
+									<property name="manipulators">
+										<util:list>
+											<bean class="xdi2.client.manipulator.impl.SetToPeerRootMessageManipulator">
+												<property name="toPeerRootXDIAddress" value="${cloudnumber}" />
+											</bean>
+										</util:list>
+									</property>
 								</bean>
 							</property>
 						</bean>
