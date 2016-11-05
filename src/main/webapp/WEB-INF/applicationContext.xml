@@ -125,6 +125,15 @@
 							({$self}/$public)$do/$get/&lt;$xdi&gt;&lt;$uri&gt;
 							({$self}/$public)$do/$get/&lt;$websocket&gt;&lt;$xdi&gt;&lt;$uri&gt;
 							({$self}/$public)$do/$get/&lt;$connect&gt;&lt;$xdi&gt;&lt;$uri&gt;
+
+
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$push/*!:uuid:972ae814-0120-4361-81dc-473f9e8f7536
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$is()/(=!:uuid:0e8f1a5b-b93a-4de0-b1f2-8f76df97fac3)
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$is()/(+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59)
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$is()/(+!:uuid:cd5e5900-406b-4eac-b578-eea37eb502c2)
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$is()/(+!:uuid:3b0064f1-f01b-4346-8518-a64b66f3217b)
+(+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$is()/(+!:uuid:f67a6673-6785-497a-a0b7-696742525795)
+
 						</value>
 					</property>
 					<property name="bootstrapMessageEnvelope">
@@ -198,14 +207,6 @@
 								</property>
 							</bean>
 						</util:list>
-					</property>
-				</bean>
-				<bean class="xdi2.messaging.target.interceptor.impl.push.PushInInterceptor" />
-				<bean class="xdi2.messaging.target.interceptor.impl.push.PushOutInterceptor">
-					<property name="pushGateway">
-						<bean class="xdi2.messaging.target.interceptor.impl.push.BasicPushGateway">
-							<property name="xdiAgent" ref="XdiAgent" />
-						</bean>
 					</property>
 				</bean>
 				<bean class="xdi2.messaging.target.interceptor.impl.push.PushInInterceptor" />
