@@ -97,16 +97,16 @@
 					<property name="bootstrapTimestamp" value="true" />
 					<property name="bootstrapGraph">
 						<value>
-							({$self}/$public)$do/$get/{$self}$msg$encrypt$keypair&lt;$public&gt;&lt;$key&gt;
-							({$self}/$public)($do/$get){$self}$msg$encrypt$keypair/$is#/{}
-							({$self}/$public)$do/$get/{$self}$msg$sig$keypair&lt;$public&gt;&lt;$key&gt;
-							({$self}/$public)($do/$get){$self}$msg$sig$keypair/$is#/{}
+							({$self}/$public)$contract$do/$get/{$self}$msg$encrypt$keypair&lt;$public&gt;&lt;$key&gt;
+							({$self}/$public)($contract$do/$get){$self}$msg$encrypt$keypair/$is#/{}
+							({$self}/$public)$contract$do/$get/{$self}$msg$sig$keypair&lt;$public&gt;&lt;$key&gt;
+							({$self}/$public)($contract$do/$get){$self}$msg$sig$keypair/$is#/{}
 							&lt;$xdi&gt;&lt;$uri&gt;/&amp;/"${uri.base}graph"
 							&lt;$websocket&gt;&lt;$xdi&gt;&lt;$uri&gt;/&amp;/"${uri.base.websocket}graph"
 							&lt;$connect&gt;&lt;$xdi&gt;&lt;$uri&gt;/&amp;/"${uri.connect}"
-							({$self}/$public)$do/$get/&lt;$xdi&gt;&lt;$uri&gt;
-							({$self}/$public)$do/$get/&lt;$websocket&gt;&lt;$xdi&gt;&lt;$uri&gt;
-							({$self}/$public)$do/$get/&lt;$connect&gt;&lt;$xdi&gt;&lt;$uri&gt;
+							({$self}/$public)$contract$do/$get/&lt;$xdi&gt;&lt;$uri&gt;
+							({$self}/$public)$contract$do/$get/&lt;$websocket&gt;&lt;$xdi&gt;&lt;$uri&gt;
+							({$self}/$public)$contract$do/$get/&lt;$connect&gt;&lt;$xdi&gt;&lt;$uri&gt;
 
 
 (+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973/+!:uuid:d8dfe1cd-6747-4502-bbcb-f9cf101b1973)$push$do/$push/*!:uuid:972ae814-0120-4361-81dc-473f9e8f7536
