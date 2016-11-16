@@ -13,7 +13,7 @@ public class Constants {
 
 	public static URI selfEndpoint = URI.create("http://localhost:7205/xdi/graph");
 
-	public static CloudNumber selfCloudNumber = CloudNumber.create("+!:uuid:f67a6673-6785-497a-a0b7-696742525795");
+	public static CloudNumber selfCloudNumber = CloudNumber.create("+!:did:sov:XuRwkbUmj1x6y3Pf3YX26K");
 
 	public static String secretToken = "alice";
 
